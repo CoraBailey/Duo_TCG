@@ -1,5 +1,9 @@
 from renderer import CardRenderer
 from card import CharacterCard
+from db import Database
+
+db = Database()
+db.create_tables()
 
 kara = CharacterCard(
     name="Kara", 
@@ -14,3 +18,6 @@ kara = CharacterCard(
 
 renderer = CardRenderer()
 renderer.render_card(kara)
+
+db.save_character(kara)
+print(db.get_characters())

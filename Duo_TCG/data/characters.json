@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Kara", 
+        "attack": 4, 
+        "life": 10, 
+        "energy": 3, 
+        "description": "A brave warrior from a distant planet with a strong sense of justice.", 
+        "capability": "Guardian", 
+        "descriptor": "Scientist", 
+        "distinction": "Hero"
+    },
+    {
+        "name": "Lena", 
+        "attack": 2, 
+        "life": 9, 
+        "energy": 2, 
+        "description": "A brilliant scientist and ambitious innovator determined to shape the world on her own terms.", 
+        "capability": "Witch", 
+        "descriptor": "Scientist", 
+        "distinction": "Hero"}, 
+    {
+        "name": "Emma", 
+        "attack": 3, 
+        "life": 8, 
+        "energy": 3, 
+        "description": "A former con artist with sharp instincts, a guarded heart, and a habit of seeing through people before they see through her.", 
+        "capability": "Rogue", 
+        "descriptor": "Con Artist", 
+        "distinction": "Hero"
+    },
+    {
+        "name": "Regina", 
+        "attack": 3, 
+        "life": 9, 
+        "energy": 3, 
+        "description": "A powerful queen and practiced witch whose sharp will is matched only by her refusal to be controlled.", 
+        "capability": "Sorceress", 
+        "descriptor": "Queen", 
+        "distinction": "Villain"
+    }
+    
+
+]
