@@ -21,6 +21,7 @@ class Database:
                 attack INTEGER,
                 life INTEGER,
                 description TEXT,
+                ability TEXT,
                 card_type TEXT
             )
             
@@ -30,7 +31,7 @@ class Database:
         with self.connect() as connection:
             cursor = connection.cursor()
             cursor.execute("""
-                INSERT INTO characters (
+                INSERT OR IGNORE INTO characters (
                     name,
                     capability,
                     descriptor,
@@ -39,9 +40,10 @@ class Database:
                     attack,
                     life,
                     description,
+                    ability,
                     card_type
                 )
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, (
                 card.name,
                 card.capability,
@@ -51,6 +53,7 @@ class Database:
                 card.attack,
                 card.life,
                 card.description,
+                card.ability,
                 card.card_type
             ))
 

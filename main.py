@@ -1,23 +1,15 @@
 from renderer import CardRenderer
-from card import CharacterCard
+from loader import load_characters
 from db import Database
 
 db = Database()
+renderer = CardRenderer()
 db.create_tables()
 
-kara = CharacterCard(
-    name="Kara", 
-    attack=4, 
-    life=10, 
-    energy=3, 
-    description="A brave warrior from a distant planet with a strong sense of justice.", 
-    capability="Guardian", 
-    descriptor="Scientist", 
-    distinction="Hero")
+characters = load_characters("Duo_TCG/data/characters.json")
 
-
-renderer = CardRenderer()
-renderer.render_card(kara)
-
-db.save_character(kara)
+for character in characters:
+    renderer.render_card(character)
+    db.save_character(character)
+    
 print(db.get_characters())

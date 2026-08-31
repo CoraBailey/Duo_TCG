@@ -7,7 +7,8 @@
         "description": "A brave warrior from a distant planet with a strong sense of justice.", 
         "capability": "Guardian", 
         "descriptor": "Scientist", 
-        "distinction": "Hero"
+        "distinction": "Hero",
+        "ability": "Intervene: may use an additional Reaction when her partner is targeted."
     },
     {
         "name": "Lena", 
@@ -17,7 +18,9 @@
         "description": "A brilliant scientist and ambitious innovator determined to shape the world on her own terms.", 
         "capability": "Witch", 
         "descriptor": "Scientist", 
-        "distinction": "Hero"}, 
+        "distinction": "Hero",
+        "ability": "Analyze: once/round, draw 1 then discard 1"
+    }, 
     {
         "name": "Emma", 
         "attack": 3, 
@@ -26,7 +29,8 @@
         "description": "A former con artist with sharp instincts, a guarded heart, and a habit of seeing through people before they see through her.", 
         "capability": "Rogue", 
         "descriptor": "Con Artist", 
-        "distinction": "Hero"
+        "distinction": "Hero",
+        "ability": "Pursue: +1 ATK when attacking the same enemy as last round"
     },
     {
         "name": "Regina", 
@@ -36,7 +40,8 @@
         "description": "A powerful queen and practiced witch whose sharp will is matched only by her refusal to be controlled.", 
         "capability": "Sorceress", 
         "descriptor": "Queen", 
-        "distinction": "Villain"
+        "distinction": "Villain",
+        "ability": "Dark Magic: After using this ability, place a Command counter on Regina. Remove it at the end of your next round. Regina cannot use Command while she has this counter."
     }
     
 

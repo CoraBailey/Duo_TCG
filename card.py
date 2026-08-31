@@ -4,7 +4,7 @@ class Card:
         self.description = description
 
 class CharacterCard(Card):
-    def __init__(self, name: str, attack: int = 0, life: int = 0, energy: int = 0, description: str = "", capability: str = "", descriptor: str = "", distinction: str = "", card_type: str = "Character"):
+    def __init__(self, name: str, attack: int = 0, life: int = 0, energy: int = 0, description: str = "", capability: str = "", descriptor: str = "", distinction: str = "", ability: str = "", card_type: str = "Character"):
         super().__init__(name, description)
         self.attack = attack
         self.life = life
@@ -12,6 +12,7 @@ class CharacterCard(Card):
         self.capability = capability
         self.descriptor = descriptor
         self.distinction = distinction
+        self.ability = ability
         self.card_type = card_type
     
     def __str__(self):
