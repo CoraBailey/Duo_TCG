@@ -12,4 +12,11 @@ for character in characters:
     renderer.render_card(character)
     db.save_character(character)
     
-print(db.get_characters())
+print("\nCharacters saved to database:")
+print("-" * 40)
+
+for character in db.get_characters():
+    print(f"{character[0]}: {character[1]} — {character[2]} / {character[3]}")
+
+print("-" * 40)
+print(f"Total characters: {len(characters)}")

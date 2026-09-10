@@ -9,8 +9,8 @@ class CardRenderer:
         self.card_width = card_width
         self.card_height = card_height
 
-        self.font_path = "arial.ttf"
-        self.italic_font_path = "ariali.ttf"
+        self.font_path = "/mnt/c/Windows/Fonts/arial.ttf"
+        self.italic_font_path = "/mnt/c/Windows/Fonts/ariali.ttf"
 
     def render_card(
         self,
